@@ -20,13 +20,35 @@ np.random.seed(42)
 ### Time series data
 # # # # # # # # # #
 
-def generate_time_series(batch_size, n_steps):
+def generate_time_series(
+        batch_size : int,
+        n_steps : int,
+):
     """
-    Generate dataset
 
-    :param batch_size:
-    :param n_steps:
-    :return:
+    "This function creates as many time series as requested (via the batch_size argument),
+    each of length n_steps, and there is just one value per time step in each series (i.e.,
+    all series are univariate). The function returns a NumPy array of shape
+        [batch size, time steps, 1],
+    where each series is the sum of two sine waves of fixed amplitudes but random
+    frequencies and phases, plus a bit of noise." -- AG p. 504
+
+    NOTE: "When dealing with time series (and other types of sequences such as sentences),
+    the input features are generally represented as 3D arrays of shape
+        [batch size, time steps, dimensionality],
+    where dimensionality is 1 for univariate time series and more for multivariate time series."
+        -- AG p. 504
+
+    Parameters
+    ----------
+    batch_size
+        Number distinct time series requested.
+    n_steps
+        Length of each time series
+
+    Returns
+    -------
+
     """
     freq1, freq2, offsets1, offsets2 = np.random.rand(4, batch_size, 1)
     time = np.linspace(0, 1, n_steps)
