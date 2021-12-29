@@ -1,0 +1,85 @@
+########################################
+#### AG's stuff
+########################################
+*.bak
+*.bak.*
+*.ckpt
+*.old
+*.pyc
+.DS_Store
+.ipynb_checkpoints
+.vscode/
+checkpoint
+logs/*
+tf_logs/*
+images/**/*.png
+images/**/*.dot
+my_*
+person.proto
+person.desc
+person_pb2.py
+datasets/flowers
+datasets/lifesat/lifesat.csv
+datasets/spam
+datasets/words
+datasets/jsb_chorales
+
+########################################
+#### AJ
+########################################
+
+datasets/
+.idea/
+.ipynb_checkpoints/
+solution/
+tmp*
+models/
+Hands-on-Machine-Learning-with-Scikit-Learn-Keras-and-TensorFlow/
+
+.ipynb_checkpoints*
+__pycache__
+/do_not_migrate
+.idea
+__pycache__/
+
+# Distribution and packaging
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+MAINFEST
+lib/
+./build/
+.Python
+wheels/
+
+# Unit test / coverage reports
+.pytest_cache
+.coverage
+.coverage.*
+.cache
+htmlcov
+
+# Exclude images
+# *.png
+# *.jpg
+# *.jpeg
+# *.pdf
+# *.graffle
+
+#Pickle objects
+*.pkl
+
+# Exclude data files
+*.rb
+#*.txt
+*.mtx
+*.csv
+*.gz
+*.dat
+*.data
+*.poly
+*.dot
+
+#
+*.html
