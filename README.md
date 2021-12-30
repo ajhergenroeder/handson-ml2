@@ -1,3 +1,8 @@
+This repo is a copy of AG's original at https://github.com/ageron/handson-ml2.  None of the content here is my own
+==========================
+
+[Raw code](https://github.com/ageron/handson-ml2)
+
 Machine Learning Notebooks
 ==========================
 
@@ -46,7 +51,7 @@ Next, run the following commands:
     $ conda env create -f environment.yml
     $ conda activate tf2
     $ python -m ipykernel install --user --name=python3
-
+python -m ipykernel install --user --name=tensorflow_p37
 Finally, start Jupyter:
 
     $ jupyter notebook
