@@ -70,7 +70,17 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
     plt.savefig(path, format=fig_extension, dpi=resolution)
 
 
-def plot_series(series, y=None, y_pred=None, x_label="$t$", y_label="$x(t)$", legend=True):
+def plot_series(
+        series,
+        y=None,
+        y_pred=None,
+        x_label="$t$",
+        y_label="$x(t)$",
+        legend=True
+):
+    """
+    AG's convenience function to do clean time series plots.
+    """
     plt.plot(series, ".-")
     if y is not None:
         plt.plot(n_steps, y, "bo", label="Target")
