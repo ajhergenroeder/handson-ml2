@@ -6,7 +6,7 @@ import os
 # # # # # #
 
 ###
-N_STEPS = 15
+N_STEPS = 50
 
 ### saving stuff
 PROJECT_ROOT_DIR = "."
